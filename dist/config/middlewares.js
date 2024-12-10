@@ -1,14 +1,11 @@
-module.exports = ({ env }) => [
-    'strapi::errors',
-    {
-        name: 'strapi::cors',
-        config: {
-            origin: ['http://localhost:3000'], // Add your frontend's URL here
-        },
-    },
-    'strapi::security',
-    'strapi::poweredBy',
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.default = [
     'strapi::logger',
+    'strapi::errors',
+    'strapi::security',
+    'strapi::cors',
+    'strapi::poweredBy',
     'strapi::query',
     'strapi::body',
     'strapi::session',
